@@ -1,6 +1,6 @@
 body{
     box-sizing: border-box;
-    background: linear-gradient(to right, gray, blue);
+    background: linear-gradient(to right,#141E30, #243B55);
 }
 header{
     background: rgb(74, 181, 231);
@@ -23,24 +23,27 @@ text-shadow: 0 0 5px black;
     margin: 0;
     font-size:large;
 }
-section {
-    background: linear-gradient(to right, rgba(123, 215, 243, 0.637), gray);
+.main {
+    background: linear-gradient(to right, #11998e ,#38ef7d);
 }
-section img {
+.main img {
     width: 130px;
     height: 150px;
 }
 #teamhead{
     text-align: center;
+    position: relative;
+    text-shadow: 0 0 10px yellowgreen;
 
 }
 #member1{
     border: 1px solid rgba(7, 6, 12, 0.699);
-    margin-bottom: 12px;
+    margin-bottom: 22px;
     width: 100%;
     height: auto;
     box-shadow:0 0 12px grey ;
     overflow: hidden;
+    background:linear-gradient(to right,#38ef7d ,  #11998e ) ;
     
 }
 #image{
@@ -50,7 +53,7 @@ section img {
   margin-left: 250px;
 }
 #data{
-    padding: 20px;
+    padding: 10px;
    text-align: left;
 }
 footer{
@@ -63,6 +66,12 @@ a{
 #name{
     font-size: x-large;
     font-style: bold;
+}
+.w3-content {
+    max-height: 1200px;
+    max-width: auto;
+    overflow: hidden;
+    min-width: auto;
 }
 @media screen and (max-width: 600px) {
     #image{
@@ -100,7 +109,7 @@ a{
   }
   @media screen and (max-width: 450px){
     #image{
-        float: ;
+        
         padding: 10px;
         text-align: center;
         margin-left:40px;
@@ -129,19 +138,19 @@ a{
         #head{
             color: white;
         }
+        .w3-content{
+            max-height: 500px;
+            max-width: auto;
+            overflow: hidden;
+            min-width: auto;
+        }
   }
-  /* @keyframes animate
-  {
-      0%
-      {
-        transform: translateY(0px);
+  @media screen and (max-width: 360px){
+    #image{
+        
+        padding: 10px;
+        text-align: center;
+        margin-left:0px;
       }
-      20%
-      {
-        transform: translateY(-20px);
-      }
-      40%, 100%
-      {
-        transform: translateY(0px);
-      }
-  } */
+  }
+  

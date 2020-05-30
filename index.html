@@ -20,6 +20,15 @@
  </header>  
  <!-- End of the head section  -->
  <section>
+  <div class="w3-content w3-section" style="max-width:">
+    <img class="mySlides" src="images/group1.jpg" style="width:100%">
+    <img class="mySlides" src="images/group2.jpg" style="width:100%">
+    <img class="mySlides" src="images/group3.jpg" style="width:100%">
+    <img class="mySlides" src="images/group4.jpg" style="width:100%">
+   
+  </div>
+ </section>
+ <section class="main">
  <h2 id="teamhead">Team members</h2>
  <div id="member1">
    <div id="image"><img src="images/me.jpg" alt="Photo of suvro"></div>
@@ -62,5 +71,23 @@
      <P id="copycat">All &copy;copyright deserve by TEAM savage69</P>
           <p id="editor">Page edit by <a href="http://facebook.com/subroto.suvroo">suvro</a></p>
  </footer>
+ <!-- End of the footer div -->
+ <script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script>
+  
 </body>
 </html>
